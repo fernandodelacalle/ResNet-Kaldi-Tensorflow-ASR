@@ -1,6 +1,3 @@
-'''@file layer.py
-Neural network layers '''
-
 import tensorflow as tf
 import numpy as np
 

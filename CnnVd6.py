@@ -1,12 +1,7 @@
-'''@file layer.py
-Neural network layers '''
-
 import tensorflow as tf
 import numpy as np
 
 class CnnVd6(object):
-    '''This class defines a fully connected feed forward layer'''
-
     def __init__(self):
         print 'Init cnn layer'
 

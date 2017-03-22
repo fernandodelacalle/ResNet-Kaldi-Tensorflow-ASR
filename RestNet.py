@@ -1,15 +1,10 @@
-'''@file layer.py
-Neural network layers '''
-
 import tensorflow as tf
 import numpy as np
 
 class RestNet(object):
-    '''This class defines a fully connected feed forward layer'''
 
     def __init__(self):
         print 'Init cnn layer'
-
 
     def __call__(self, inputs, is_training=False, reuse=False, scope=None):
         with tf.variable_scope(scope or type(self).__name__, reuse=reuse):        
@@ -70,9 +65,6 @@ class RestNet(object):
         print 'hidden_'+ name_layer
         print hidden.get_shape() 
         return hidden
-
-
-
 
 
     def fully_connected(self, name_layer, x, reuse, is_training):
